@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/bckimg">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/grettingsapp"
+            android:layout_above="@+id/EDIT1"
+            android:padding="30dp">
+
+        </ImageView>
+
+
+        <EditText
+            android:id="@+id/EDIT1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_weight="1"
+            android:backgroundTint="#000000"
+            android:hint="Write a grettings for your friend "
+            android:textSize="25dp"
+            android:textColor="@color/black"
+            android:textStyle="bold">
+
+        </EditText>
+
+        <Button
+            android:id="@+id/bntNxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NEXT"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:layout_below="@+id/EDIT1"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#9FEFE8">
+
+        </Button>
+
+    </RelativeLayout>
+</RelativeLayout>
